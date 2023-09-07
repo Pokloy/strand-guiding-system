@@ -1,0 +1,327 @@
+/*#region Constant Styles*/
+    .cardManual {
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      background-color: #fff;
+    }
+    .cardB {
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      border-radius: 5px;
+      border-left: 5px solid #28a745;
+    }
+    .cardB:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    .alertCard {
+      box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
+
+    .successAlert {
+      border-left: 3.5px solid #198754 !important;
+    }
+
+    .errorAlert {
+      border-left: 3px solid #dc3545 !important;
+    }
+
+    .warningAlert {
+      border-left: 3px solid #ffc107 !important;
+    }
+
+    a.active_item {
+      background-color: #E5E5E5;
+    }
+
+
+    ul.nav.nav-tabs li a:not(.active)  {
+      color: gray !important;
+    }
+    ul.nav.nav-tabs li a.active {
+      border-top: 4px solid #007bff !important;
+      background-color: #f7f7f7;
+    }
+/*#endregion  Constant Styles*/
+
+
+/*#region System New Styles*/
+    body {
+      font-family: 'Nunito', sans-serif;
+      background-color: #f8f9fA;
+    }
+
+    .d_none {
+      display: none;
+    }
+
+    .btn-rounded {
+      border-radius: 30px;
+    }
+    
+    .btn_round {
+      border-radius: 30px;
+    }
+
+    .card_signIn {
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      background-color: #fff;
+      border-radius: 15px;
+    }
+
+    .card_accountSettings {
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      background-color: #fff;
+      border-radius: 5px;
+    }
+
+    .cardUsers {
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      background-color: #fff;
+      border-radius: 5px;
+    }
+
+    .card_strand {
+      box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      background-color: #fff;
+      border-radius: 7px;
+    }
+
+    .cardPreassessment {
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      background-color: #fff;
+      border-radius: 15px;
+    }
+
+    .cardAssessment_success {
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      background-color: #fff;
+      border-radius: 10px;
+    }
+
+    .cardRegistration {
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      background-color: #fff;
+    }
+
+    .card_dashboard {
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      background-color: #fff;
+      border-radius: 10px;
+    }
+
+    .card_strand_faculty {
+      box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      background-color: #fff;
+    }
+    .card_strand_faculty:hover {
+      box-shadow: 2px 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    .card-question {
+      box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      background-color: #fff;
+    }
+
+    .cur-pointer {
+      cursor: pointer;
+    }
+
+    .acc_type_assessor {
+      border: 3px solid #007bff;
+      border-radius: 20px;
+    }
+
+    .acc_type_student {
+      border: 3px solid #FFC107;
+      border-radius: 20px;
+    }
+
+    .span_color_assessor {
+      color: #007bff !important;
+    }
+
+    .span_color_student {
+      color: #FFC107 !important;
+    }
+
+    .off_overflowY {
+      overflow-y: hidden !important;
+    }
+
+    .p_cursor 
+    {
+      cursor: pointer;
+    }
+
+    .underline_text {
+      cursor: pointer;
+    }
+    .underline_text:hover{
+      text-decoration: underline;
+    }
+
+    .card_item:hover
+    {
+      color: black !important;
+      text-decoration: underline;
+    }
+
+    .action_q:hover
+    {
+      color: black !important;
+    }
+
+    .remove_outline:focus
+    {
+      box-shadow: inset 0 -1px 0 #fff;
+    }
+
+    .Qs
+    {
+      display: block !important;
+    }
+
+  /* animate bootstrap progress bar for strand assessments */
+  .progress .progress-bar {
+      animation-name: animateBar;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in;
+      animation-duration: .6s;
+  }
+  @keyframes animateBar {
+      0% {transform: translateX(-100%);}
+      100% {transform: translateX(0);}
+  }
+
+  .sty_question {
+    display: none;
+  }
+
+  .card-verification {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: #fff;
+    border-top: 4px solid #007bff;
+    border-radius: 10px;
+  }
+
+  .resend-code:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  /*#region homepage animation css*/
+
+    .animate_b_2_t
+    {
+      transition: 0.5s;
+      transform: translateY(0);
+    }
+
+    .animate_fadein {
+      animation: fadein 1.8s;
+      -moz-animation: fadein 1.8s; /* Firefox */
+      -webkit-animation: fadein 1.8s; /* Safari and Chrome */
+      -o-animation: fadein 1.8s; /* Opera */
+    }
+
+    @keyframes fadein {
+      from {
+          opacity:0;
+      }
+      to {
+          opacity:1;
+      }
+    }
+    @-moz-keyframes fadein { /* Firefox */
+      from {
+          opacity:0;
+      }
+      to {
+          opacity:1;
+      }
+    }
+    @-webkit-keyframes fadein { /* Safari and Chrome */
+      from {
+          opacity:0;
+      }
+      to {
+          opacity:1;
+      }
+    }
+    @-o-keyframes fadein { /* Opera */
+      from {
+          opacity:0;
+      }
+      to {
+          opacity: 1;
+      }
+    }
+
+  /*#endregion homepage animation css*/
+
+  /*#region circular percentage progress css*/
+    @keyframes growProgressBar {
+      0%, 33% { --pgPercentage: 0; }
+      100% { --pgPercentage: var(--value); }
+    }
+
+    @property --pgPercentage {
+      syntax: '<number>';
+      inherits: false;
+      initial-value: 0;
+    }
+
+    div[role="progressbar"] {
+      --size: 12rem;
+      --fg: #007bff;
+      --bg: #def;
+      --pgPercentage: var(--value);
+      animation: growProgressBar 4s 1 forwards;
+      width: var(--size);
+      height: var(--size);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: 
+        radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
+        conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0)
+        ;
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: calc(var(--size) / 5);
+      color: var(--fg);
+    }
+
+    div[role="progressbar"]::before {
+      counter-reset: percentage var(--value);
+      content: counter(percentage) '%';
+    }
+  /*#endregion circular percentage progress css*/
+
+  .hideList {
+    display: none;
+  }
+
+  /* show admin strand list */
+  .showList {
+    display: block;
+  }
+
+  .put_bg_cap {
+    background-image: url('/public/assets/img/draw/strand_bg.png');
+    height: 100%;
+    background-size: cover;
+  }
+
+/*#endregion System New Styles*/

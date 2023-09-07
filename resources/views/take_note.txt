@@ -1,0 +1,61 @@
+
+development resources and links
+    https://www.onlineshs.com/guide-to-all-strands-in-senior-high/ - strand descriptions
+
+
+development constant tasks
+    import libraries and frameworks
+    import images and gif loading
+    create templates { header, footer, master files, page templates }
+    always indicate a comment { for easy debugging and understanding of code -> espicially for nested stuctures and algorithms}
+    always indicate regions { for readable code }
+    remove inline styling { always provide page styling scripts/css files -> for clean code structure }
+    indicate control/element titles for a user-friendly output
+
+
+laravel redirect to route with data
+https://stackoverflow.com/questions/52218545/redirect-with-compact-value-in-laravel
+
+
+Redirecting To Controller Actions
+use App\Http\Controllers\HomeController;
+ 
+return redirect()->action([HomeController::class, 'index']);
+
+special algorithm for hiding sensitive elements
+add hide class and add hide js/jquery
+
+
+
+
+!important account -> gmail Account
+refer to local storage path(C:\Files\Notes done\important accs CareerGuidance)
+
+Development Pendings
+
+404 customization ->
+invalid email handling ->
+student ui finalize ->
+
+
+Transfer
+Step1 : Update the packages command
+
+composer update --no-scripts
+
+Step2 : Create the env file for the database configuration
+copy .env.example .env
+
+Step3 : Key Generate the App_Key for the Envfile
+php artisan key:generate
+
+Step4 : Setup Database Configurations
+Step5 : Run Migrations
+
+
+Customize No. of Question per Strand
+Files Affected
+-index.blade.php
+-view_strand.blade.php
+-registration.blade.php
+-RegistrationController.php
